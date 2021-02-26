@@ -14,6 +14,7 @@ callbacks = sh.get_worksheet(2)
 
         #function to take col to be checked and sheet to wrtie results to.
 def col_check(col, pull_sheet, write_sheet):
+
                 #creates value table for true/false in col to be checked
                 check_values_list = pull_sheet.col_values(col)
                 loop = 0
@@ -33,7 +34,7 @@ def col_check(col, pull_sheet, write_sheet):
                         else:
                                 print("no")
 
-
 col_check(5, leads, meets)
 col_check(7, leads, callbacks)
+
 
